@@ -6,7 +6,7 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { User } from '../Models/usermodel.js';
+import { User } from '../models/usermodel.js';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv'
 import { PORT } from '../config.js';

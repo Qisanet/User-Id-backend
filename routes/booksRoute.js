@@ -1,5 +1,5 @@
 import express from "express";
-import { Book } from "../Models/bookModel.js";
+import { Book } from "../models/bookModel.js";
 import upload from "../middleware/multer.js";
 import authenticate from "../middleware/authenticate.js";
 
