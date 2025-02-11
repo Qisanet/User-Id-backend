@@ -21,7 +21,7 @@ const bookSchema = new mongoose.Schema(
         userId: {
             type: mongoose.Types.ObjectId,
             ref: "user",
-            required: true, // Ensure userId is required
+            required: true, 
         },
     },
     {
@@ -29,4 +29,7 @@ const bookSchema = new mongoose.Schema(
     }
 );
 
+
+
 export const Book = mongoose.model("mybook", bookSchema);
+

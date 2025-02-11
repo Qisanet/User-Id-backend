@@ -3,22 +3,25 @@ import mongoose from 'mongoose';
 const UserSchema = mongoose.Schema(
     {
         username: {
-            type: String, // Corrected "types" to "type"
+            type: String, 
             required: true,
             unique: true,
         },
         email: {
-            type: String, // Corrected "types" to "type"
+            type: String, 
             required: true,
             unique: true,
         },
         password: {
-            type: String, // Corrected "types" to "type"
+            type: String, 
             required: true,
         },
+        isEmailVerified: { type: Boolean, default: false },
+        verificationToken: { type: String }
+
     },
     {
-        timestamps: true, // Corrected typo from "tru" to "true"
+        timestamps: true,
     }
 );
 
